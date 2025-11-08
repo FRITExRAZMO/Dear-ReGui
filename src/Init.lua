@@ -16,7 +16,7 @@ local ReGui = {
 	Version = "1.4.7",
 	Author = "Depso",
 	License = "MIT",
-	Repository = "https://github.com/depthso/Dear-ReGui/",
+	Repository = "https://github.com/Jibbefr/Dear-ReGui-Edited/",
 
 	--// Configuration
 	Debug = false,
@@ -53,7 +53,6 @@ local ReGui = {
 }
 
 --// Modules
-print("@lib")
 local IDE = require("@lib/ide.lua")
 local Wrappers = require("@classes/Wrappers.lua")
 local Animation = require("@classes/Animations.lua")
