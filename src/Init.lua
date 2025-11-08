@@ -4310,7 +4310,6 @@ ReGui:DefineElement("CollapsingHeader", {
 			TitleText.Text = Title
 		end
 		function Config:SetVisible(Visible: boolean)
-			if self.IsClosed then return end
 			Object.Visible = Visible
 		end
 		function Config:SetIcon(Icon: string|number)
@@ -5902,7 +5901,7 @@ function WindowClass:Close()
 	end
 
 	self:Remove()
-    self.IsClosed = true
+	self.IsClosed = true
 end
 
 function WindowClass:SetVisible(Visible: boolean): WindowFlags
@@ -6272,7 +6271,7 @@ end
 export type WindowFlags = {
 	AutoSize: string?,
 	CloseCallback: (WindowFlags) -> boolean?,
-    IsClosed: boolean?,
+	IsClosed: boolean?,
 	Collapsed: boolean?,
 	IsDragging: boolean?,
 	MinSize: Vector2?,
@@ -6731,6 +6730,7 @@ ReGui:DefineElement("PopupModal", {
 			})
 
 			Window:Close()
+
 		end
 
 		--// Fade modal effect 
