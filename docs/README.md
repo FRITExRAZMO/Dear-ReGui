@@ -77,4 +77,4 @@ as the module will quickly become outdated and cause issues with the Prefabs. Cu
 Using custom prefabs with ReGUI is very simple. 
 To use custom prefabs you can point the library's `Prefabs` to the custom prefabs in the `:Init` call. For externally using custom prefabs, replace `rbxassetid://{ReGui.PrefabsId}` with `rbxassetid://PrefabsID` and replace `PrefabsID` with the id of your custom prefabs that you have published on Roblox.
 
-ReGui prefabs asset: [Prefabs Gui - Roblox](https://create.roblox.com/store/asset/71968920594655)
+ReGui prefabs asset: [Prefabs Gui - Roblox](https://create.roblox.com/store/asset/118141554242342/ReGui-Prefabs)
