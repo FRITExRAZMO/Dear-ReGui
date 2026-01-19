@@ -1164,7 +1164,7 @@ end
 
 function ReGui:InsertPrefab(Name: string, Properties): GuiObject
 	local Folder = self.Prefabs
-	local Prefabs = Folder.Prefabs
+	local Prefabs = Folder:FindFirstChild("Prefabs")
 
 	local Object = Wrappers:NewReference(
 		Prefabs:WaitForChild(Name):Clone()
